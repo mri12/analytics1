@@ -25,6 +25,7 @@ v1[is.na(v1)] = mean(v1, na.rm=T)
 v1
 
 #Use VIM package to load sleep dataset with NA values in rows & col
+install.packages('VIM')
 library(VIM)
 data(sleep, package='VIM')
 summary(sleep)# see NA values in cols
